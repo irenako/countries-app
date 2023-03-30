@@ -25,7 +25,7 @@ export const InfoImage = styled.img`
 `;
 
 export const InfoTitle = styled.h1`
-  margin: 0;
+  margin: 25px 0;
   font-weight: var(--fw-normal);
 `;
 
@@ -79,5 +79,7 @@ export const Tag = styled.span`
   box-shadow: var(--shadow);
   line-height: 1.5;
   cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 15px;
 `;
 

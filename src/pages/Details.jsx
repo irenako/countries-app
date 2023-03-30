@@ -21,7 +21,6 @@ export default function Details() {
       <Button onClick={() => navigate('/')}>
         <IoArrowBack /> Back
       </Button>
-      <h1>{name}</h1>
       {country && <Info push={navigate} {...country} />}
     </div>
   );
