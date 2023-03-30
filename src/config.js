@@ -1,5 +1,4 @@
 const BASE_URL = 'https://restcountries.com/v2/';
-// https://restcountries.com/v3.1/all
 
 export const ALL_COUNTRIES = BASE_URL + 'all?fields=name,capital,flags,population,region';
 

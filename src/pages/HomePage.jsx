@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function HomePage({countries, setCountries}) {
   const [filteredCountries, setFilteredCountries] = useState(countries)
-  let push = useNavigate();
+  const navigate = useNavigate();
 
   const handleSearch = (search, region) => {
     let data = [...countries];
@@ -66,7 +66,7 @@ export default function HomePage({countries, setCountries}) {
             <Card
               key={c.name}
               {...countryInfo}
-              onClick={() => push(`country/&{c.name}`)}
+              onClick={() => navigate(`country/${c.name}`)}
             />
           );
         })}

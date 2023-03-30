@@ -17,7 +17,7 @@ function App() {
       <Main>
         <Routes>
           <Route index element={<HomePage countries={countries} setCountries={setCountries} />} />
-          <Route path='/country/:name' element={<Details />} />
+          <Route path="/country/:name" element={<Details />} />
           <Route element={<NotFound />} />
         </Routes>
       </Main>
